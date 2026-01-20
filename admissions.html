@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Avondale Primary School</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="data:;base64,=">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Avondale Primary</a>
+            <div class="hamburger" id="hamburger"><span>&#9776;</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admissions.html" class="btn btn-secondary">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="background-image: url('assets/images/hero-facilities.jpg'); height: 40vh;">
+        <div class="hero-content">
+            <h1>Join Our Community</h1>
+            <p>Begin your journey with Avondale Primary School.</p>
+        </div>
+    </header>
+
+    <section class="section" style="padding: var(--spacing-lg) 0;">
+        <div class="container">
+            <div class="grid grid-2">
+                <div>
+                    <h2 class="section-title" style="text-align: left; left: 0; transform: none;">Admissions Process
+                    </h2>
+                    <p>We welcome applications for all grades. Our admission process is designed to be transparent and
+                        fair.</p>
+                    <ul style="list-style: disc; margin-left: 1.5rem; margin-bottom: 2rem;">
+                        <li>Complete the online application form.</li>
+                        <li>Submit required documents (Birth Certificate, Previous Report).</li>
+                        <li>Attend an interview/assessment (if applicable).</li>
+                        <li>Receive offer letter.</li>
+                    </ul>
+                    <p><strong>Note:</strong> Since this is a demo, the form below validates but does not send real
+                        data.</p>
+                </div>
+                <div
+                    style="background: var(--color-bg-white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 5px solid var(--color-primary);">
+                    <h3 style="margin-bottom: 1.5rem; text-align: center;">Application Form</h3>
+                    <form id="admissionsForm" novalidate>
+                        <div class="form-group">
+                            <label for="studentName">Student Full Name</label>
+                            <input type="text" id="studentName" placeholder="e.g. John Doe">
+                            <div class="error-message">This field is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentAge">Age</label>
+                            <input type="number" id="studentAge" placeholder="e.g. 7">
+                            <div class="error-message">This field is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="grade">Grade Applying For</label>
+                            <select id="grade">
+                                <option value="">Select Grade</option>
+                                <option value="ECD">ECD</option>
+                                <option value="Grade 1">Grade 1</option>
+                                <option value="Grade 2">Grade 2</option>
+                                <option value="Grade 3">Grade 3</option>
+                                <option value="Grade 4">Grade 4</option>
+                                <option value="Grade 5">Grade 5</option>
+                                <option value="Grade 6">Grade 6</option>
+                                <option value="Grade 7">Grade 7</option>
+                            </select>
+                            <div class="error-message">Please select a grade</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentName">Parent/Guardian Name</label>
+                            <input type="text" id="parentName" placeholder="Parent Name">
+                            <div class="error-message">This field is required</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="parentEmail">Email Address</label>
+                            <input type="email" id="parentEmail" placeholder="email@example.com">
+                            <div class="error-message">Please enter a valid email</div>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <h2 class="logo">Avondale Primary</h2>
+            <p class="motto">"Attempt, Persevere, Act and Succeed"</p>
+            <p style="margin-top: var(--spacing-md); opacity: 0.8;">&copy; 2026 Avondale Primary School.</p>
+        </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
